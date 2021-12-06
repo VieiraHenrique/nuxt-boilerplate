@@ -74,6 +74,23 @@ This directory contains your Vuex store files. Creating a file in this directory
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
 
+to call the stores:
+
+```
+## For index.js store:
+
+this.$store.state
+this.$store.commit("name of action", payload)
+this.$store.dispatch("NAME_OF_MUTATION, payload)
+
+# For example.js store
+
+this.$store.state.example.{{variable}}
+this.$store.commit('example/{{function}}', payload);
+this.$store.dispatch('example/{{function}}', payload);
+
+```
+
 ### `env`
 
 Create your variables in the .env file.
